@@ -1,12 +1,14 @@
-import java.util.*;
-public class Main
+package CoreJava.Basics;
 
-{
+import java.util.Scanner;
+
+public class Reversenumber {
     public static void main(String[] args)
     {
         Scanner sc=new Scanner(System.in);
+        System.out.println("Get Number for Reverse:");
         int n=sc.nextInt();
-        System.out.print("Get Number for Reverse");
+
         int m=n;
         int rev=0; //54
         while(n>0)
@@ -27,6 +29,6 @@ public class Main
 
 
 
-        System.out.print("The reversed number is"+rev);
+        System.out.print(rev);
     }
 }
