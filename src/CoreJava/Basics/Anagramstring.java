@@ -1,6 +1,11 @@
-import java.util.*;
-public class Main
-{
+package CoreJava.Basics;
+
+import java.util.Map;
+import java.util.Scanner;
+import java.util.TreeMap;
+
+public class Anagramstring {
+
     public static void main(String[] args)
     {
         Scanner sc=new Scanner(System.in);
@@ -20,7 +25,7 @@ public class Main
 //        {
 //            System.out.print("No");
 //        }
-        TreeMap<Character,Integer>col=new TreeMap<>();
+        TreeMap<Character,Integer> col=new TreeMap<>();
         TreeMap<Character,Integer>col2=new TreeMap<>();
         for(int i=0;i<str1.length();i++)
         {
@@ -42,12 +47,12 @@ public class Main
             for(Map.Entry<Character,Integer>lop:col.entrySet())
 
             {
-                 char key=lop.getKey();
-                 if(!col.get(key).equals(col2.get(key)))
-                 {
-                     System.out.print("Not a anagram");
-                     return;
-                 }
+                char key=lop.getKey();
+                if(!col.get(key).equals(col2.get(key)))
+                {
+                    System.out.print("Not a anagram");
+                    return;
+                }
             }
         }
 
