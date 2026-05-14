@@ -1,35 +1,36 @@
 import java.util.*;
 public class Main
 {
-    public static void main(String[] args)
-    {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        //153=1*3 + 5*3 +3*3 =153
-        int ans=0;
-        String str=n+"";
+    //find no: of no,consonant,vowels count in a sting
 
-        while(n>0)  //153
+public static void main(String[] args) {
+
+    Scanner sc = new Scanner(System.in);
+    String str = sc.next();
+
+    int number = 0;
+    int vowel = 0;
+    int consonant = 0;
+
+    for (int i = 0; i < str.length(); i++) {
+
+        char c=str.charAt(i);
+        if("aeiouAEIOU".indexOf(str.charAt(i))!=-1)
         {
-            int temp=n%10;
-//            ans+=Math.pow(temp,str.length());
-            int power=1;    // insaord of Math.pow funstion
-            for(int i=0;i<str.length();i++)
-            {
-                power*=temp;
-            }
-            ans+=power;
-           n/=10;
+            vowel+=1;
         }
-        if(ans==Integer.parseInt(str))
+        else if(c>='0' && c<='9')
         {
-            System.out.print("The Armstrong number is "+ans );
+            number+=1;
         }
         else {
-            System.out.print("No");
+            consonant+=1;
         }
 
-
-
     }
+    System.out.println("The vowel"+vowel);
+    System.out.println("The number"+number);
+    System.out.println("The consosnnat"+consonant);
+}
+
 }
