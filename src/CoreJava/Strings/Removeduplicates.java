@@ -1,6 +1,8 @@
-import java.util.*;
-public class Main
-{
+package CoreJava.Strings;
+
+import java.util.Scanner;
+
+public class Removeduplicates {
     public static void main(String[] args)
     {
         Scanner sc=new Scanner(System.in);
@@ -8,15 +10,15 @@ public class Main
         //note use LinkedHashset o(n) optimixed
         String str=sc.next();
         String ans="";
-            for(int i=0;i<str.length();i++)
+        for(int i=0;i<str.length();i++)
+        {
+            if(!ans.contains(str.charAt(i)+""))
             {
-                if(!ans.contains(str.charAt(i)+""))
-                {
-                    ans+=str.charAt(i);
-                }
+                ans+=str.charAt(i);
             }
+        }
 
-            System.out.print("The staring : "+ ans);
+        System.out.print("The staring : "+ ans);
 
 
 
