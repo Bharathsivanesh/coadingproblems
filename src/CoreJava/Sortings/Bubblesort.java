@@ -1,10 +1,13 @@
-import java.util.*;
-public class Main
-{
+package CoreJava.Sortings;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Bubblesort {
     public static void main(String[] args)
     {
         Scanner sc=new Scanner(System.in);
-       //Bubble sort (descending order  store in end of array)
+        //Bubble sort (descending order  store in end of array)
 
         int[]a={3,2,5,0,1};
         for(int i=0;i<a.length;i++)
