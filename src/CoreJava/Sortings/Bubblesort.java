@@ -10,7 +10,7 @@ public class Bubblesort {
         //Bubble sort (descending order  store in end of array)
 
         int[]a={3,2,5,0,1};
-        for(int i=0;i<a.length;i++)
+        for(int i=0;i<a.length-1;i++)
         {
             for(int j=0;j<a.length-i-1;j++)
             {

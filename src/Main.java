@@ -1,24 +1,23 @@
+import java.lang.reflect.Array;
 import java.util.*;
 public class Main
 {
     public static void main(String[] args)
     {
-        Scanner sc=new Scanner(System.in);
-       //Bubble sort (descending order  store in end of array)
+        int a[]={2,3,1,0};
+//Insertion sort (Store the number in crt order ( store in ascending form left to right)
+       for(int i=1;i<a.length;i++)
+       {
+           int key=a[i];
+           int j=i-1;
+           while(j>=0 && key<a[j])
+           {
+               a[j+1]=a[j];
+               j--;
+           }
+           a[j+1]=key;
+       }
+       System.out.print("The insertion sort"+ Arrays.toString(a));
 
-        int[]a={3,2,5,0,1};
-        for(int i=0;i<a.length;i++)
-        {
-            for(int j=0;j<a.length-i-1;j++)
-            {
-                if(a[j]>a[j+1])
-                {
-                    int tem=a[j];
-                    a[j]=a[j+1];
-                    a[j+1]=tem;
-                }
-            }
-        }
-        System.out.print(Arrays.toString((a)));
     }
 }
