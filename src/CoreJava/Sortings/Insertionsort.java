@@ -6,7 +6,7 @@ public class Insertionsort {
     public static void main(String[] args)
     {
         int a[]={2,3,1,0};
-//Insertion sort (Store the number in crt order ( store in ascending form left to right)
+//Insertion sort (Store the number in crt order  iterate form left to right)
         for(int i=1;i<a.length;i++)
         {
             int key=a[i];

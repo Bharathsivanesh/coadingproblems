@@ -1,10 +1,14 @@
-import java.util.*;
-public class Main
-{
+package CoreJava.Sortings;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Selectionsort {
     public static void main(String[] args)
     {
         Scanner sc=new Scanner(System.in);
         int[]a={4,3,5,0,0};
+        //Pick the small number from array and store it in left to right
         int n=a.length;
         for(int i=0;i<n-1;i++)
         {
@@ -27,6 +31,6 @@ public class Main
 
 
         }
-        System.out.print("The selecion sort"+Arrays.toString(a));
+        System.out.print("The selecion sort"+ Arrays.toString(a));
     }
 }
