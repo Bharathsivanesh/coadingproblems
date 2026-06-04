@@ -1,32 +1,24 @@
 import java.util.*;
 public class Main
 {
+    //283
     public static void main(String[] args)
     {
-        Scanner sc=new Scanner(System.in);
-        int[]a={4,3,5,0,0};
-        int n=a.length;
-        for(int i=0;i<n-1;i++)
+        int[]a={1,2,3,0,7};
+        int left=0;
+        int right=0;
+        while(right<a.length)
         {
-            int minidx=i;
-
-            for(int j=i+1;j<n;j++)
+            if(a[right]!=0)
             {
-                if(a[j]<a[minidx])
-                {
-
-                    minidx=j;
-                }
+                int temp=a[right];
+                a[right]=a[left];
+                a[left]=temp;
+                left++;
             }
-            if(minidx!=i)
-            {
-                int temp=a[i];
-                a[i]=a[minidx];
-                a[minidx]=temp;
-            }
-
-
+            right++;
         }
-        System.out.print("The selecion sort"+Arrays.toString(a));
+        System.out.print(Arrays.toString(a));
+
     }
 }
