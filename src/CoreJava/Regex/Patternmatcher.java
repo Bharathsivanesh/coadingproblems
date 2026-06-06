@@ -1,7 +1,10 @@
-import java.util.*;
-import java.util.regex.*;
-public class Main
-{
+package CoreJava.Regex;
+
+import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class Patternmatcher {
     public static void main(String[] args)
     {
         Scanner sc=new Scanner(System.in);
