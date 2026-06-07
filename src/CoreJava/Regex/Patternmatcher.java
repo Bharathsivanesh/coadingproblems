@@ -8,9 +8,10 @@ public class Patternmatcher {
     public static void main(String[] args)
     {
         Scanner sc=new Scanner(System.in);
-        String data="Abc12cujh90";
-        Pattern pattern=Pattern.compile("\\d+");  //"\\D+" MEANS OPPRISTE IT diplays strings
-
+        String data="iphone12namebharathiphone123kumar";
+        Pattern pattern=Pattern.compile("iphone\\d+");  //"\\D+" MEANS OPPRISTE IT diplays strings
+        //"iphone\\d+" matchs exact word with number(d+)
+        //"\\d+" means split the digitss
         //[a-z] -> Lowe case
         //[0-9] -> digits one bu one "+" means more than 1
         //"[a-zA-Z]+|\\d+" -> both letters and dighits
