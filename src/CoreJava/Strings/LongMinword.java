@@ -1,6 +1,8 @@
-import java.util.*;
-public class Main
-{
+package CoreJava.Strings;
+
+import java.util.Scanner;
+
+public class LongMinword {
     public static void main(String[] args)
     {
         Scanner sc=new Scanner(System.in);
