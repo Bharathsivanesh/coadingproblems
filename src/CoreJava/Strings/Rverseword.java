@@ -1,6 +1,8 @@
-import java.util.*;
-public class Main
-{
+package CoreJava.Strings;
+
+import java.util.Scanner;
+
+public class Rverseword {
     public static void main(String[] args)
     {
         Scanner sc=new Scanner(System.in);
