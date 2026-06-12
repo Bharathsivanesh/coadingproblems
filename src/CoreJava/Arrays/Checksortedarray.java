@@ -1,6 +1,8 @@
-import java.util.*;
-public class Main
-{
+package CoreJava.Arrays;
+
+import java.util.Scanner;
+
+public class Checksortedarray {
     public static void main(String[] args)
     {
         Scanner sc=new Scanner(System.in);
