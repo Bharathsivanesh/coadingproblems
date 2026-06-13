@@ -1,18 +1,19 @@
 import java.util.*;
 public class Main
 {
+    //Check if Two Strings are Rotations
     public static void main(String[] args)
     {
         Scanner sc=new Scanner(System.in);
-        int[]a={1,2,5,7};
-        for(int i=0;i<a.length-1;i++)
+        String data1="ABCDEF";
+        String data2="FAB";
+        String ans=data1+data1;
+        if(ans.contains(data2))
         {
-            if(a[i]>a[i+1])
-            {
-                System.out.print("Not Sorted");
-                return;
-            }
+            System.out.print("YES");
         }
-        System.out.print("Sorted");
+        else {
+            System.out.print("NO");
+        }
     }
 }
