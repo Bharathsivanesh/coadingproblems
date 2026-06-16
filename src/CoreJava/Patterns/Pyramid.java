@@ -1,6 +1,9 @@
-import java.util.*;
-public class Main
-{
+package CoreJava.Patterns;
+
+import java.util.Scanner;
+
+public class Pyramid {
+
     //pyramid pattern
     public static void main(String[] args)
     {
