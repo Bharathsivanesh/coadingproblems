@@ -1,6 +1,8 @@
-import java.util.*;
-public class Main
-{
+package CoreJava.Arrays;
+
+import java.util.Scanner;
+
+public class Leaderproblem {
     //Leaders in an Array  arr = {16, 17, 4, 3, 5, 2}   outpyt:17 5 2
     public static void main(String[] args)
     {
