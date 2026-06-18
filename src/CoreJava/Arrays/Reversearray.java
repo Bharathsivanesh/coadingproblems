@@ -1,7 +1,9 @@
-import java.util.*;
+package CoreJava.Arrays;
 
-public class Main
-{
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Reversearray {
     public static void main(String[] args)
     {
         //reverse the number
