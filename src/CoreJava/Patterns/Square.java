@@ -1,6 +1,6 @@
-import java.util.*;
-public class Main
-{
+package CoreJava.Patterns;
+
+public class Square {
     public static void main(String[] args)
     {
         //square pattern
