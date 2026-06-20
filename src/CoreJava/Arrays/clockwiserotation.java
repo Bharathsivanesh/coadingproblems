@@ -1,9 +1,12 @@
-import java.util.*;
+package CoreJava.Arrays;
 
-public class Main
-{
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class clockwiserotation {
+
     //clock wise rotation
-    public static int[] reverse(int[]a,int st,int end )
+    public static void reverse(int[]a,int st,int end )
     {
         while(st<end)
         {
@@ -13,7 +16,7 @@ public class Main
             st++;
             end--;
         }
-        return a;
+
     }
 
     public static void main(String[] args)
@@ -25,12 +28,12 @@ public class Main
         int r=ro%n;
         int st=0;
         int end=n-1;
-        a=reverse(a,0,n-1);  // // Reverse entire array  5 4 3 2 1
+        reverse(a,0,n-1);  // // Reverse entire array  5 4 3 2 1
 
 
-        a=reverse(a,0,r-1);  // Reverse first r elements)  4 5  3 2 1
+        reverse(a,0,r-1);  // Reverse first r elements)  4 5  3 2 1
 
-        a=reverse(a,r,n-1);   //  Reverse remaining elements after r to end   4 5 1 2 3
+        reverse(a,r,n-1);   //  Reverse remaining elements after r to end   4 5 1 2 3
         System.out.print(Arrays.toString(a));
 
 
