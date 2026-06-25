@@ -1,6 +1,7 @@
 package CoreJava.leetcodes.patterns.slidingwindow;
 
 public class Maxconsecutiveones111 {
+    //1004
 
     public static int longestOnes(int[] nums, int k) {
 
