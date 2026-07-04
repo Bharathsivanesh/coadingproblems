@@ -2,6 +2,8 @@ package CoreJava.leetcodes.patterns.slidingwindow;
 
 public class NiceSubarrays {
 
+    //1248
+
     public int numberOfSubarrays(int[] nums, int k) {
 
         int l = 0;
@@ -38,8 +40,8 @@ public class NiceSubarrays {
         NiceSubarrays obj = new NiceSubarrays();
 
         // Test Case 1
-        int[] nums1 = {1, 1, 2, 1, 1};
-        int k1 = 3;
+        int[] nums1 = {2,2,2,1,2,2,1,2,1,2};
+        int k1 = 2;
         System.out.println("Output: " + obj.numberOfSubarrays(nums1, k1));
         // Expected: 2
 
