@@ -1,8 +1,7 @@
 package CoreJava.leetcodes;
 
-class Solution {
-//1752
-    public boolean check(int[] nums) {
+public class Findrotatedsortarray {
+    public static boolean check(int[] nums) {
 
         int c = 0;
 
@@ -20,16 +19,11 @@ class Solution {
 
         return c <= 1;
     }
-}
-
-public class Findrotatedsortarray {
 
     public static void main(String[] args) {
 
-        Solution s = new Solution();
-
         int arr[] = {3,4,5,1,2};
 
-        System.out.println(s.check(arr));
+        System.out.println(check(arr));
     }
 }
