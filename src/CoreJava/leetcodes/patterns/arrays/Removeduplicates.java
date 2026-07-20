@@ -2,8 +2,8 @@ package CoreJava.leetcodes.patterns.arrays;
 
 import java.util.Arrays;
 
-class Solution {
-    public int removeDuplicates(int[] nums) {
+public class Removeduplicates {
+    public static int removeDuplicates(int[] nums) {
 
         int l = 0;
 
@@ -19,17 +19,12 @@ class Solution {
 
         return l + 1;
     }
-}
-
-public class Removeduplicates {
 
     public static void main(String[] args) {
 
         int[] nums = {1, 1, 2, 2, 3, 4, 4, 5};
 
-        Solution solution = new Solution();
-
-        int k = solution.removeDuplicates(nums);
+        int k = removeDuplicates(nums);
 
         System.out.println("Number of unique elements: " + k);
 
